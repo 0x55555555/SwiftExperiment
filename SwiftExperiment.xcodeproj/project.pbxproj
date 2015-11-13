@@ -16,6 +16,8 @@
 		0826FECC1BF523F900FD1DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0826FECA1BF523F900FD1DFD /* LaunchScreen.storyboard */; };
 		0826FED71BF523FA00FD1DFD /* SwiftExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0826FED61BF523FA00FD1DFD /* SwiftExperimentTests.swift */; };
 		0826FEE21BF523FA00FD1DFD /* SwiftExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0826FEE11BF523FA00FD1DFD /* SwiftExperimentUITests.swift */; };
+		0882EC3B1BF6694200D21EE6 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882EC3A1BF6694200D21EE6 /* Timeline.swift */; };
+		0882EC3D1BF66A6A00D21EE6 /* TimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882EC3C1BF66A6A00D21EE6 /* TimelineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0826FEDD1BF523FA00FD1DFD /* SwiftExperimentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExperimentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0826FEE11BF523FA00FD1DFD /* SwiftExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExperimentUITests.swift; sourceTree = "<group>"; };
 		0826FEE31BF523FA00FD1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0882EC3A1BF6694200D21EE6 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		0882EC3C1BF66A6A00D21EE6 /* TimelineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				0826FEC81BF523F900FD1DFD /* Assets.xcassets */,
 				0826FECA1BF523F900FD1DFD /* LaunchScreen.storyboard */,
 				0826FECD1BF523F900FD1DFD /* Info.plist */,
+				0882EC3A1BF6694200D21EE6 /* Timeline.swift */,
 			);
 			path = SwiftExperiment;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				0826FED61BF523FA00FD1DFD /* SwiftExperimentTests.swift */,
 				0826FED81BF523FA00FD1DFD /* Info.plist */,
+				0882EC3C1BF66A6A00D21EE6 /* TimelineTests.swift */,
 			);
 			path = SwiftExperimentTests;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0882EC3B1BF6694200D21EE6 /* Timeline.swift in Sources */,
 				0826FEC21BF523F900FD1DFD /* GameScene.swift in Sources */,
 				0826FEC41BF523F900FD1DFD /* GameViewController.swift in Sources */,
 				0826FEBE1BF523F900FD1DFD /* AppDelegate.swift in Sources */,
@@ -273,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0882EC3D1BF66A6A00D21EE6 /* TimelineTests.swift in Sources */,
 				0826FED71BF523FA00FD1DFD /* SwiftExperimentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +502,7 @@
 				0826FEE81BF523FA00FD1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0826FEE91BF523FA00FD1DFD /* Build configuration list for PBXNativeTarget "SwiftExperimentTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +511,7 @@
 				0826FEEB1BF523FA00FD1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0826FEEC1BF523FA00FD1DFD /* Build configuration list for PBXNativeTarget "SwiftExperimentUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +520,7 @@
 				0826FEEE1BF523FA00FD1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
