@@ -24,7 +24,14 @@ class TimelineTests: XCTestCase {
   func testExample() {
     let tl = SwiftExperiment.Timeline()
     
-    tl.add_object(SwiftExperiment.TimelineObject(construction: 0.0, destruction: 5.0));
+    let supplier = SwiftExperiment.ValueSupplier(callback: { (tl: SwiftExperiment.Timeline) in
+      let fl = tl.sample("time") as Float
+      return sin(fl)
+    })
+    
+    print(supplier.sample(tl))
+    
+    tl.add_object(SwiftExperiment.TimelineObject(construction: 0.0, destruction: 5.0, supplier: supplier));
   }
   
   func testPerformanceExample() {

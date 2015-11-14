@@ -8,16 +8,32 @@
 
 import Foundation
 
+class ValueSupplier
+{
+  var callback: ((Timeline) -> Any)
+  
+  init(callback: ((Timeline) -> Any))
+  {
+    self.callback = callback
+  }
+  
+  func sample(tl: Timeline) -> Any
+  {
+    return self.callback(tl)
+  }
+}
 
 class TimelineObject
 {
   let construction: Float;
   let destruction: Float;
+  let supplier: ValueSupplier;
   
-  init(construction: Float, destruction: Float)
+  init(construction: Float, destruction: Float, supplier: ValueSupplier)
   {
     self.construction = construction;
     self.destruction = destruction;
+    self.supplier = supplier;
   }
 }
 
@@ -33,5 +49,10 @@ class Timeline
   func add_object(obj: TimelineObject)
   {
     self.objects.append(obj)
+  }
+  
+  func sample(name: String) -> Any
+  {
+    return 5
   }
 }
