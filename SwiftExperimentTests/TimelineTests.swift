@@ -17,7 +17,7 @@ class TimelineTests: XCTestCase {
   }
   
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    // Put teardown code  here. This method is called after the invocation of each test method in the class.
     super.tearDown()
   }
   
@@ -25,8 +25,7 @@ class TimelineTests: XCTestCase {
     let tl = SwiftExperiment.Timeline()
     
     let supplier = SwiftExperiment.ValueSupplier(callback: { (tl: SwiftExperiment.Timeline) in
-      let fl = tl.sample("time") as Float
-      return sin(fl)
+      return sin(tl.sample<Float>("time"))
     })
     
     print(supplier.sample(tl))
