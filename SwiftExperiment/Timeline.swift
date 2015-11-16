@@ -51,16 +51,11 @@ class Timeline
     self.objects.append(obj)
   }
   
-  func sample<T>(name: String) -> T
+  func sample<T>(name: String) -> T?
   {
     let t: Any = 5;
     
-    switch t
-    {
-    case let t as Float:
-      return T.Type(t)
-    case let t as Int:
-      return T.Type(t)
-    }
+    let out = t as! T
+    return out;
   }
 }

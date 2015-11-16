@@ -25,7 +25,8 @@ class TimelineTests: XCTestCase {
     let tl = SwiftExperiment.Timeline()
     
     let supplier = SwiftExperiment.ValueSupplier(callback: { (tl: SwiftExperiment.Timeline) in
-      return sin(tl.sample<Float>("time"))
+      let t = tl.sample<Float>("time")
+      return sin(t);
     })
     
     print(supplier.sample(tl))
